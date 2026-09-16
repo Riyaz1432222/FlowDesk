@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Requests from "./pages/Requests";
 import Vendors from "./pages/Vendors";
+import  RequestDetails  from "./pages/RequestDetails";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/requests/:id" element={<RequestDetails />} />
       </Routes>
     </BrowserRouter>
   );
