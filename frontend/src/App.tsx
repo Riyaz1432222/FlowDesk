@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Requests from "./pages/Requests";
 import Vendors from "./pages/Vendors";
 import  RequestDetails  from "./pages/RequestDetails";
+import VendorDetails from "./pages/VendorDetails";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
         <Route path="/requests/:id" element={<RequestDetails />} />
+        <Route path="/vendors/:id" element={<VendorDetails />} />
       </Routes>
     </BrowserRouter>
   );
